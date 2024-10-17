@@ -6,6 +6,7 @@ namespace DataLayer;
 
 public class DataService : IDataService
 {
+    //Category Functions
     public Category GetCategory(int id)
     {
         var context = new NorthwindContext();
@@ -60,7 +61,7 @@ public class DataService : IDataService
         return false;
     }
 
-    //Products Methods
+    //Products Functions
     public Product GetProduct(int id)
     {
         var context = new NorthwindContext();
@@ -93,7 +94,7 @@ public class DataService : IDataService
     }
 
 
-    //Orders
+    //Orders Functions
     public Order GetOrder(int orderId)
     {
         var context = new NorthwindContext();
@@ -120,7 +121,7 @@ public class DataService : IDataService
         return orders;
     }
 
-    //OrderDetails
+    //OrderDetails Functions
     public IList<OrderDetails> GetOrderDetailsByOrderId(int orderid)
     {
         var context = new NorthwindContext();
